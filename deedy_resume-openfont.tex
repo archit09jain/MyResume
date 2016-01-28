@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Archit}{Jain}{ 
+\urlstyle{same}\url{https://www.facebook.com/archit.jain.562} \\
+\href{mailto:archit.dtu.jain@gmail.com}{archit.dtu.jain@gmail.com} | (+91)9582910353
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Delhi Technological}
+\subsection{University}
+\descript{B.Tech -Computer Science}
+\location{Expected June 2017 | Delhi, India \\ Aggregate: 83.4\% *}
+\sectionsep
+
+\subsection{Sachdeva Public School}
+\descript{All India Senior Secondary}
+\descript{Certificate Examination}
+\location{May 2013 | Aggregate: 96.4\% *}
+\sectionsep
+
+\descript{All India Secondary School}
+\descript{Examination}
+\location{May 2011 | CGPA: 9.6}
+\sectionsep
+
+\subsection{All India Engineering}
+\subsection{Enterance Exam}
+\location{Rank 2087/14 lakh}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/archit09jain}{\custombold{archit09jain}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/archit-jain-603972102}{\custombold{archit-jain-603972102}} \\
+Codechef://  \href{https://www.codechef.com/users/archit_jain08}{\custombold{archit\_jain08}} \\
+Spoj://  \href{http://www.spoj.com/users/emo8/}{\custombold{emo8}} \\
+Codeforces://  \href{http://codeforces.com/profile/archit_jain08}{\custombold{archit\_jain08}}
+Hackerrank://  \href{https://www.hackerrank.com/archit_dtu_jain}{\custombold{archit\_dtu\_jain}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Algorithm Design and Analysis \\
+Data Structures \\
+Operating System\\
+Computer Networks \\
+Object Oriented Programming\\
+Discrete Mathematics
+\sectionsep
+
+\subsection{Online}
+Git and Github - Udacity\\
+Intro to Machine Learning}- Udacity\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+\location{Proficient:}
+C++ \textbullet{}   C  \\
+\location{Intermediate:}
+Python \textbullet{} JAVA\textbullet{} HTML \textbullet{} CSS\\
+\location{Prior Knowledge:}
+Android \textbullet{} PHP \textbullet{} Javascript\textbullet{} SQL
+\sectionsep
+
+\subsection{Tools and Framework}
+Git\textbullet{} Sckit-Learn(ML) \textbullet{} Netbeans Ide
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Taxi driver Passenger Seeking System - Oct/Nov 2015}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{\urlstyle{same}\url{https://github.com/A-And-A/TaxiPassengerSeekingStrategies}}
+\begin{tightemize}
+\item Unsupervised Machine Learning - KMeans Algorithm.
+\item Recommends nearby location where driver may find a customer booking.
+\item Tools/API : Java Netbeans IDE, Google Maps API, JSON Parser.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Accelerometer - Gesture Recognition - JAN/FEB 2016}
+\location{\urlstyle{same}\url{https://github.com/archit09jain/IOT-Project}}
+\begin{tightemize}
+\item Internet of things - Accelerometer data collected from android smart phones and watches is used to predict the gesture performed by the user in a 3d space.
+\item Accuracy of approx 91\% with SVM - C = 100 and Gamma = 0.001
+\item Controls desktop applications like VLC media player and 2048 game.
+\item Languages/Libraries : Java - Android, Python Scikit-Learn, Sqlite3, numpy, matplotlib,pyuserinput - pykeyboard and pymouse.
+.\end{tightemize}
+\sectionsep
+
+\subsection{Code and Share - JUN/JUL 2015}
+\location{\urlstyle{same}\url{https://github.com/A-and-A/Code-n-Share}}
+\begin{tightemize}
+\item Text editor with code compilation and sharing functionality over a same network during competitive programming competitions.
+\item Developed for University Hostel LAN as an offline substitute of ideone.com using socket programming and ProcessBuilder class.
+\item Tools/API : Java Netbens IDE.
+\end{tightemize}
+\sectionsep
+
+\subsection{SPAM FILTER - JUN/JUL 2015}
+\location{\urlstyle{same}\url{https://github.com/archit09jain/Spam-Filter}}
+\begin{tightemize}
+\item  SVM ­ 97.9\% and G.N. Bayes ­ 92.2\%
+\item Tools/API : Java Netbens IDE and Pyhton Sckikt Learn.
+\end{tightemize}
+\sectionsep
+
+\subsection{ANDROID AND WINDOWS AI MOBILE GAMES - OCT/DEC 2013}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item RUBIX(Android) - 2 Dimensional Rubik's cube with next move predictor.
+\item CROSSX(Windows) - Tic -Tac -Toe (Single Player Mode Included)
+\end{tightemize}
+\sectionsep
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+\begin{tabular}{rll}
+2015	     &  69/2281  & Snapdeal Programming Hackathon - Hackerrank\\
+2015	     &  85/1312  & Adobe Programming Hackathon - Hackerrank\\
+2015     & National Rank 80 & Chennai ICPC Preliminary Round  \\
+2015     & National Rank 111 & ACM-ICPC-Amritapuri Multi-site Regionals\\
+2015     & 1/500 & BITS Programming contest by IEEE DTU\\
+2015     & 1/300 & Sudocode programming contest by CSI DTU\\
+2015     & 6/211 & DTU Programming Mania sponsered by Coding Blocks\\
+2015     & National rank 110 & IOPC - IIT KANPUR\\
+2015     & Global Rank 59/6456 & Codechef OCT Long Challenge\\
+2016	     &  Qualified Round2 & Facebook Hackercup\\
+2016	     &  44/4897  & Codagon - Codenation Coding Competition - Hackerrank\\
+\end{tabular}
+\begin{tightemize}
+\item Amongst High Rated Coders in India on Programming Sites such as Codechef,Codeforces, Spoj etc.
+\item Among Top 70 coders in India (according to Codechef Long Challenge Ratings)
+\end{tightemize}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
